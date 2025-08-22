@@ -71,9 +71,9 @@ if not database_url:
     mysql_config = {
         'host': os.environ.get('MYSQL_HOST', 'localhost'),
         'port': os.environ.get('MYSQL_PORT', '3306'),
-        'user': os.environ.get('MYSQL_USER', 'root'),
-        'password': os.environ.get('MYSQL_PASSWORD', 'root@123'),
-        'database': os.environ.get('MYSQL_DATABASE', 'wms_db_dev')
+        'user': os.environ.get('MYSQL_USER', 'senpai'),
+        'password': os.environ.get('MYSQL_PASSWORD', '123456789'),
+        'database': os.environ.get('MYSQL_DATABASE', 'wms')
     }
     
     has_mysql_env = any(os.environ.get(key) for key in ['MYSQL_HOST', 'MYSQL_USER', 'MYSQL_PASSWORD', 'MYSQL_DATABASE'])

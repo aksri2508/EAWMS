@@ -16,9 +16,9 @@ def check_and_fix_admin():
     # Get database connection details from environment
     host = os.environ.get('MYSQL_HOST', 'localhost')
     port = int(os.environ.get('MYSQL_PORT', '3306'))
-    user = os.environ.get('MYSQL_USER', 'root')
-    password = os.environ.get('MYSQL_PASSWORD', '')
-    database = os.environ.get('MYSQL_DATABASE', 'wms_db')
+    user = os.environ.get('MYSQL_USER', 'senpai')
+    password = os.environ.get('MYSQL_PASSWORD', '123456789')
+    database = os.environ.get('MYSQL_DATABASE', 'wms')
     
     try:
         print("🔧 Connecting to MySQL database...")
@@ -27,7 +27,8 @@ def check_and_fix_admin():
             port=port,
             user=user,
             password=password,
-            database=database
+            database=database,
+            auth_plugin='mysql_native_password'
         )
         
         if connection.is_connected():

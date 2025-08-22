@@ -2,6 +2,7 @@
 QR Code and Barcode Generation Module
 Equivalent to C# ZXing.QRCode functionality
 """
+#from tkinter import Image
 
 import qrcode
 import io

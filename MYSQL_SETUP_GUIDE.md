@@ -40,7 +40,7 @@ SESSION_SECRET=your-secret-key
 
 ### Option 3: Using Docker MySQL (Easiest)
 ```bash
-# Run MySQL in Docker
+# Run MySQL in Dockerfile
 docker run --name mysql-wms \
   -e MYSQL_ROOT_PASSWORD=root@123 \
   -e MYSQL_DATABASE=wms_db_dev \
